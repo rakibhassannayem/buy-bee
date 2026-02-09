@@ -1,4 +1,7 @@
+import { LucideIcon } from "lucide-react";
+
 export interface Tproducts {
+  icon?: LucideIcon;
   id: number;
   title: string;
   category: string;

@@ -1,11 +1,20 @@
 import { Tproducts } from "@/types/products";
+import { 
+  Smartphone, 
+  Monitor, 
+  Watch, 
+  Camera, 
+  Headphones, 
+  Gamepad2 
+} from "lucide-react";
 
 export const productsData: Tproducts[] = [
   {
     id: 1,
     title: "iPhone 14 Pro Max",
-    category: "phone",
+    category: "Phone",
     brand: "Apple",
+    icon: Smartphone,
     price: 1450,
     discount: 10,
     rating: 4.8,
@@ -36,8 +45,9 @@ export const productsData: Tproducts[] = [
   {
     id: 2,
     title: "Dell XPS 15",
-    category: "computer",
+    category: "Computer",
     brand: "Dell",
+    icon: Monitor,
     price: 2100,
     discount: 15,
     rating: 4.6,
@@ -68,8 +78,9 @@ export const productsData: Tproducts[] = [
   {
     id: 3,
     title: "Apple Watch Series 9",
-    category: "smartWatch",
+    category: "SmartWatch",
     brand: "Apple",
+    icon: Watch,
     price: 520,
     discount: 8,
     rating: 4.7,
@@ -96,6 +107,7 @@ export const productsData: Tproducts[] = [
     title: "Canon EOS R50 Mirrorless Camera",
     category: "Camera",
     brand: "Canon",
+    icon: Camera,
     price: 980,
     discount: 12,
     rating: 4.5,
@@ -122,6 +134,7 @@ export const productsData: Tproducts[] = [
     title: "Sony WH-1000XM5",
     category: "HeadPhone",
     brand: "Sony",
+    icon: Headphones,
     price: 399,
     discount: 20,
     rating: 4.9,
@@ -148,6 +161,7 @@ export const productsData: Tproducts[] = [
     title: "PlayStation 5",
     category: "Gaming",
     brand: "Sony",
+    icon: Gamepad2,
     price: 620,
     discount: 5,
     rating: 4.8,
