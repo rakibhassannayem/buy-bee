@@ -19,16 +19,16 @@ export function Banner() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-40 sm:max-w-xs"
+      className="w-full h-auto"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem className="basis-1/3" key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
+          <CarouselItem key={index}>
+            <div>
+              <Card className="rounded-none">
+                <CardContent className="flex items-center justify-center p-6">
                   <span className="text-4xl font-semibold">{index + 1}</span>
                 </CardContent>
               </Card>
@@ -36,8 +36,6 @@ export function Banner() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 }
