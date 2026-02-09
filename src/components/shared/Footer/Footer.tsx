@@ -1,13 +1,16 @@
 import Image from "next/image";
 import playStore from "@/assets/playstore.png";
 import appStore from "@/assets/appstore.png";
+import Logo from "../Logo/Logo";
 
 const Footer = () => {
   return (
     <div className="bg-primary text-white p-10">
       <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div>
-          <h3 className="text-2xl font-bold mb-5">BuyBee</h3>
+          <div className="pb-5">
+            <Logo />
+          </div>
           <p>
             BuyeBee is your one-stop destination for all electronics, fashion,
             and lifestyle products. We connect quality sellers with smart buyers
@@ -15,8 +18,20 @@ const Footer = () => {
           </p>
           <h2 className="text-2xl font-bold mt-4">Check Our App on</h2>
           <div className="flex items-center gap-2 mt-2">
-            <Image src={playStore} alt="playStore" width={110} height={100} className="cursor-pointer hover:shadow-2xl shadow-black" />
-            <Image src={appStore} alt="appStore" width={110} height={100} className="cursor-pointer hover:shadow-2xl shadow-black" />
+            <Image
+              src={playStore}
+              alt="playStore"
+              width={110}
+              height={100}
+              className="cursor-pointer hover:shadow-2xl shadow-black"
+            />
+            <Image
+              src={appStore}
+              alt="appStore"
+              width={110}
+              height={100}
+              className="cursor-pointer hover:shadow-2xl shadow-black"
+            />
           </div>
         </div>
 

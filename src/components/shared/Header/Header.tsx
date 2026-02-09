@@ -1,7 +1,69 @@
+import {
+  Facebook,
+  Heart,
+  Instagram,
+  Linkedin,
+  ShoppingCart,
+  Twitter,
+  User,
+  InfoIcon,
+  Search,
+} from "lucide-react";
+import Logo from "../Logo/Logo";
+import { Field, FieldLabel } from "@/components/ui/field";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+  InputGroupText,
+} from "@/components/ui/input-group";
+
 const Header = () => {
   return (
     <div>
-      Header
+      <div className="bg-primary text-white py-4.5">
+        <div className="container mx-auto flex justify-between items-center">
+          <span>✉️ Email: support@buybee.com</span>
+          <div className="flex items-center gap-3">
+            <Facebook size={18} />
+            <Twitter size={18} />
+            <Instagram size={18} />
+            <Linkedin size={18} />
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto py-5 flex flex-col md:flex-row md:items-center justify-between gap-5">
+        <div className="text-primary">
+          <Logo />
+        </div>
+
+        <div className="md:w-2xl lg:w-4xl">
+          <Field>
+            <InputGroup className="bg-primary/10">
+              <InputGroupInput
+                id="input-group-url"
+                placeholder="Search Items here........"
+              />
+              <InputGroupAddon align="inline-end">
+                <Search />
+              </InputGroupAddon>
+            </InputGroup>
+          </Field>
+        </div>
+
+        <div className="flex items-center gap-3 text-sm">
+          <div className="flex items-center gap-1">
+            <User size={20} />
+            Sign Up/Sign In
+          </div>
+          <div className="flex items-center gap-1">
+            <ShoppingCart size={20} />
+            Cart
+          </div>
+          <Heart size={20} />
+        </div>
+      </div>
     </div>
   );
 };
