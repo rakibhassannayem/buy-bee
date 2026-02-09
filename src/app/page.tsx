@@ -1,5 +1,6 @@
 import BestSelling from "@/components/pages/home/BestSelling";
 import HeroSection from "@/components/pages/home/HeroSection";
+import TopBrands from "@/components/pages/home/TopBrands";
 import TopCategory from "@/components/pages/home/TopCategory";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="space-y-20">
       <HeroSection />
       <TopCategory />
+      <TopBrands />
       <BestSelling />
     </div>
   );

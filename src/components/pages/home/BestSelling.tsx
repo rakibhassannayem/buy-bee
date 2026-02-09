@@ -4,6 +4,7 @@ import bag from "@/assets/bestSellingImg/bag.png";
 import cpuCooler from "@/assets/bestSellingImg/cpuCooler.png";
 import gamepad from "@/assets/bestSellingImg/gamepad.png";
 import jacket from "@/assets/bestSellingImg/jacket.png";
+import { ShoppingCart } from "lucide-react";
 
 const BestSelling = () => {
   const bestSellingProducts = [
@@ -34,20 +35,24 @@ const BestSelling = () => {
         </Button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-15">
         {bestSellingProducts.map((product) => (
           <div key={product.id} className="group cursor-pointer">
-            <div className="bg-muted h-50 rounded-xl flex items-center justify-center relative transition-all group-hover:shadow-xl border border-transparent group-hover:border-primary/20">
+            <div className="bg-muted h-50 rounded-xl flex flex-col items-center justify-center relative transition-all group-hover:shadow-xl border border-transparent group-hover:border-primary/20">
               <Image
                 src={product?.image}
                 alt={product?.name}
                 className="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-110"
               />
               {product.discount && (
-                <div className="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
-                  {product.discount}%
+                <div className="absolute top-3 left-3 bg-[#DB4444] text-white text-xs px-3 py-1 rounded">
+                  -{product.discount}%
                 </div>
               )}
+              <Button className="w-full rounded-t-none">
+                <ShoppingCart />
+                Add To Cart
+              </Button>
             </div>
 
             <div className="mt-4">

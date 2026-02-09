@@ -30,7 +30,7 @@ const TopCategory = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-15">
         {productsData.map((product, index) => (
           <div
             key={product.id}
