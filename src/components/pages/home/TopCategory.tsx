@@ -21,16 +21,16 @@ const TopCategory = () => {
           <div className="border-t-9 border-primary mt-3" />
         </div>
         <div className="flex items-center gap-2">
-          <div className="bg-muted-foreground/10 p-3 rounded-full">
+          <div className="bg-muted-foreground/10 p-3 rounded-full hover:bg-muted-foreground/20 cursor-pointer">
             <ArrowLeft />
           </div>
-          <div className="bg-muted-foreground/10 p-3 rounded-full">
+          <div className="bg-muted-foreground/10 p-3 rounded-full hover:bg-muted-foreground/20 cursor-pointer">
             <ArrowRight />
           </div>
         </div>
       </div>
 
-      <div className="flex items-center gap-3 justify-between mt-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-5">
         {productsData.map((product, index) => (
           <div
             key={product.id}

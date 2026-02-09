@@ -12,6 +12,7 @@ export const productsData: Tproducts[] = [
   {
     id: 1,
     title: "iPhone 14 Pro Max",
+    image: "https://www.citypng.com/public/uploads/preview/iphone-14-pro-and-max-deep-purple-png-704081694621850q0ub3cabmx.png",
     category: "Phone",
     brand: "Apple",
     icon: Smartphone,
@@ -45,6 +46,7 @@ export const productsData: Tproducts[] = [
   {
     id: 2,
     title: "Dell XPS 15",
+    image: "https://p7.hiclipart.com/preview/910/21/274/laptop-dell-xps-15-computer-monitors-personal-computer-laptops.jpg",
     category: "Computer",
     brand: "Dell",
     icon: Monitor,
@@ -78,6 +80,7 @@ export const productsData: Tproducts[] = [
   {
     id: 3,
     title: "Apple Watch Series 9",
+    image: "https://www.citypng.com/public/uploads/preview/apple-watch-series-9-stainless-steel-graphite-front-view-11694993739smzxyejruv.png",
     category: "SmartWatch",
     brand: "Apple",
     icon: Watch,
@@ -105,6 +108,7 @@ export const productsData: Tproducts[] = [
   {
     id: 4,
     title: "Canon EOS R50 Mirrorless Camera",
+    image: "https://hnsgsfp.imgix.net/9/images/detailed/91/canon-eos-r50-aps-c-mirrorless-camera-body-only-black_1.jpg?fit=fill&bg=0FFF&w=1534&h=900&auto=format,compress",
     category: "Camera",
     brand: "Canon",
     icon: Camera,
@@ -132,6 +136,7 @@ export const productsData: Tproducts[] = [
   {
     id: 5,
     title: "Sony WH-1000XM5",
+    image: "https://www.sonylatvija.com/image/1faff1a8d2f9b518cb2ef53f2c1d5af3?fmt=png-alpha&wid=960",
     category: "HeadPhone",
     brand: "Sony",
     icon: Headphones,
@@ -159,6 +164,7 @@ export const productsData: Tproducts[] = [
   {
     id: 6,
     title: "PlayStation 5",
+    image: "https://png.pngtree.com/png-vector/20200616/ourmid/pngtree-ps-5-or-playstation-5-png-set-with-game-controller-png-image_2256908.jpg",
     category: "Gaming",
     brand: "Sony",
     icon: Gamepad2,

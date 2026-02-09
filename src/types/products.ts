@@ -4,6 +4,7 @@ export interface Tproducts {
   icon?: LucideIcon;
   id: number;
   title: string;
+  image: string;
   category: string;
   brand: string;
   price: number;
