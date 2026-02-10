@@ -2,10 +2,14 @@
 
 Buy Bee is a modern, high-performance e-commerce platform built with Next.js, offering a seamless and responsive shopping experience. From browsing trending products to managing your cart, Buy Bee is designed for speed and style.
 
+## 🔗 Live Demo
+
+Visit the live site: https://buy-bee.vercel.app/
+
 ## 🚀 Features
 
 - **Rich Homepage**: Features dynamic sections including Hero sliders, Top Brands, Best Selling items, and New Arrivals.
-- **Enhanced Product Details**: 
+- **Enhanced Product Details**:
   - **Dynamic Interactivity**: Interactive quantity and color selectors.
   - **Ratings Summary**: Visual star breakdown and average rating display.
   - **Verified Reviews**: Detailed customer reviews with verified badges.
@@ -29,17 +33,20 @@ Buy Bee is a modern, high-performance e-commerce platform built with Next.js, of
 Follow these steps to get the project running locally:
 
 ### 1. Clone the repository
+
 ```bash
 git clone <repository-url>
 cd buy-bee-scaleup
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Run the development server
+
 ```bash
 npm run dev
 ```
