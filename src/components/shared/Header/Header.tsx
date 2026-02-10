@@ -15,6 +15,7 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
+import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   return (
@@ -62,6 +63,8 @@ const Header = () => {
           <Heart size={20} />
         </div>
       </div>
+
+      <Navbar />
     </div>
   );
 };
