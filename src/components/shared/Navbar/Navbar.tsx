@@ -44,6 +44,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
+
       <div className="col-span-12 lg:col-span-10 border-t">
         <div>
           <nav>

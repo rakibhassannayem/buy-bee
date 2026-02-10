@@ -9,11 +9,10 @@ export interface Tproducts {
   brand: string;
   price: number;
   discount: number;
+  description: string;
   rating: number;
   review: number;
-  keySpecifications: {
-    [key: string]: string;
-  };
+  keySpecifications: string[];
   reviews: {
     name: string;
     comment: string;

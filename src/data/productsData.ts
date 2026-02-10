@@ -18,15 +18,18 @@ export const productsData: Tproducts[] = [
     icon: Smartphone,
     price: 1450,
     discount: 10,
+    description: "Apple MacBook Air (Early 2025) Apple M3 13.6 Midnight Laptop Price.",
     rating: 4.8,
     review: 1245,
-    keySpecifications: {
-      display: "6.7-inch Super Retina XDR",
-      processor: "A16 Bionic",
-      camera: "48MP + 12MP + 12MP",
-      battery: "4323 mAh",
-      storage: "256GB",
-    },
+    keySpecifications: [
+      "Display: 13.6-inch Liquid Retina display with True Tone",
+      "Processor: Apple M3 chip with 8-core CPU and 8-core GPU",
+      "Memory: 8GB unified memory",
+      "Storage: 256GB SSD",
+      "Color: Midnight",
+      "Operating System: macOS Sonoma",
+      "Other Features: Fanless design for silent operation, Touch ID, Magic Keyboard, and up to 18 hours of battery life.",
+    ],
     reviews: [
       {
         name: "Rahim Ahmed",
@@ -52,15 +55,16 @@ export const productsData: Tproducts[] = [
     icon: Monitor,
     price: 2100,
     discount: 15,
+    description: "Apple MacBook Air (Early 2025) Apple M3 13.6 Midnight Laptop Price.",
     rating: 4.6,
     review: 860,
-    keySpecifications: {
-      display: "15.6-inch 4K UHD",
-      processor: "Intel Core i7 13th Gen",
-      ram: "16GB",
-      storage: "1TB SSD",
-      graphics: "NVIDIA RTX 3050",
-    },
+    keySpecifications: [
+      "Display: 15.6-inch 4K UHD",
+      "Processor: Intel Core i7 13th Gen",
+      "Memory: 16GB",
+      "Storage: 1TB SSD",
+      "Graphics: NVIDIA RTX 3050",
+    ],
     reviews: [
       {
         name: "Arif Khan",
@@ -86,15 +90,16 @@ export const productsData: Tproducts[] = [
     icon: Watch,
     price: 520,
     discount: 8,
+    description: "Apple MacBook Air (Early 2025) Apple M3 13.6 Midnight Laptop Price.",
     rating: 4.7,
     review: 540,
-    keySpecifications: {
-      display: "Always-On Retina",
-      size: "45mm",
-      sensors: "Heart Rate, ECG, Blood Oxygen",
-      battery: "18 hours",
-      connectivity: "GPS + Cellular",
-    },
+    keySpecifications: [
+      "Display: Always-On Retina",
+      "Size: 45mm",
+      "Sensors: Heart Rate, ECG, Blood Oxygen",
+      "Battery: 18 hours",
+      "Connectivity: GPS + Cellular",
+    ],
     reviews: [
       {
         name: "Tanvir Hasan",
@@ -114,15 +119,16 @@ export const productsData: Tproducts[] = [
     icon: Camera,
     price: 980,
     discount: 12,
+    description: "Apple MacBook Air (Early 2025) Apple M3 13.6 Midnight Laptop Price.",
     rating: 4.5,
     review: 312,
-    keySpecifications: {
-      sensor: "24.2MP APS-C",
-      video: "4K 30fps",
-      autofocus: "Dual Pixel CMOS AF",
-      weight: "375g",
-      lensMount: "RF Mount",
-    },
+    keySpecifications: [
+      "Sensor: 24.2MP APS-C",
+      "Video: 4K 30fps",
+      "Autofocus: Dual Pixel CMOS AF",
+      "Weight: 375g",
+      "Lens Mount: RF Mount",
+    ],
     reviews: [
       {
         name: "Imran Hossain",
@@ -142,15 +148,16 @@ export const productsData: Tproducts[] = [
     icon: Headphones,
     price: 399,
     discount: 20,
+    description: "Apple MacBook Air (Early 2025) Apple M3 13.6 Midnight Laptop Price.",
     rating: 4.9,
     review: 2100,
-    keySpecifications: {
-      type: "Over-Ear",
-      noiseCancellation: "Active Noise Cancellation",
-      battery: "30 hours",
-      connectivity: "Bluetooth 5.2",
-      weight: "250g",
-    },
+    keySpecifications: [
+      "Type: Over-Ear",
+      "Noise Cancellation: Active Noise Cancellation",
+      "Battery: 30 hours",
+      "Connectivity: Bluetooth 5.2",
+      "Weight: 250g",
+    ],
     reviews: [
       {
         name: "Farhan Ali",
@@ -170,15 +177,16 @@ export const productsData: Tproducts[] = [
     icon: Gamepad2,
     price: 620,
     discount: 5,
+    description: "Apple MacBook Air (Early 2025) Apple M3 13.6 Midnight Laptop Price.",
     rating: 4.8,
     review: 3300,
-    keySpecifications: {
-      processor: "AMD Ryzen Zen 2",
-      gpu: "10.28 TFLOPs",
-      storage: "825GB SSD",
-      resolution: "4K Gaming",
-      frameRate: "Up to 120fps",
-    },
+    keySpecifications: [
+      "Processor: AMD Ryzen Zen 2",
+      "GPU: 10.28 TFLOPs",
+      "Storage: 825GB SSD",
+      "Resolution: 4K Gaming",
+      "Frame Rate: Up to 120fps",
+    ],
     reviews: [
       {
         name: "Sabbir Rahman",

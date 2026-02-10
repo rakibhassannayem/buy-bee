@@ -1,76 +1,20 @@
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { productsData } from "@/data/productsData";
-import { Funnel, ShoppingCart, Star } from "lucide-react";
-import Image from "next/image";
+import { ShoppingCart, Star } from "lucide-react";
+import Link from "next/link";
 
 const ExploreProducts = () => {
   // Get unique categories for filtering
-  const categories = Array.from(new Set(productsData.map((p) => p.category)));
-
-  const sortOptions = [
-    { label: "Default", value: "default" },
-    { label: "Price: Low to High", value: "price_low" },
-    { label: "Price: High to Low", value: "price_high" },
-    { label: "Top Rated", value: "rating" },
-    { label: "Newest", value: "newest" },
-  ];
 
   return (
     <div className="container mx-auto mt-20">
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-4xl font-semibold">
-            Explore <span className="text-primary">Our Products</span>
-          </p>
-          <div className="border-t-9 border-primary mt-3" />
-        </div>
-
-        <div className="flex items-center gap-4">
-          <Select>
-            <SelectTrigger className="w-48 bg-muted/30 border-none h-12 flex items-center justify-start gap-2 px-4 cursor-pointer">
-              <Funnel size={18} />
-              <SelectValue placeholder="Filter" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectItem value="all">All Categories</SelectItem>
-                {categories.map((category) => (
-                  <SelectItem key={category} value={category.toLowerCase()}>
-                    {category}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-
-          <Select>
-            <SelectTrigger className="w-48 bg-muted/30 border-none h-12">
-              <SelectValue placeholder="Sort By" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                {sortOptions.map((option) => (
-                  <SelectItem key={option.value} value={option.value}>
-                    {option.label}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-        </div>
-      </div>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-15">
         {productsData.map((product) => (
-          <div key={product.id} className="group cursor-pointer">
+          <Link
+            href={"/details"}
+            key={product.id}
+            className="group cursor-pointer"
+          >
             <div className="bg-muted h-50 rounded-xl flex flex-col items-center justify-center relative transition-all group-hover:shadow-xl border border-transparent group-hover:border-primary/20 overflow-hidden">
               <img
                 src={product?.image}
@@ -117,7 +61,7 @@ const ExploreProducts = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
