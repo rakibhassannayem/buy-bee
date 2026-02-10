@@ -49,7 +49,10 @@ const Navbar = () => {
           <nav>
             <ul className="flex flex-wrap items-center justify-center lg:justify-between px-4 lg:px-40 py-3 text-primary font-semibold gap-4 lg:gap-0">
               <li>
-                <Link href="#">Contact</Link>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
               </li>
               <li>
                 <Link href="#">Products</Link>
