@@ -6,7 +6,7 @@ import Logo from "../Logo/Logo";
 const Footer = () => {
   return (
     <div className="bg-primary text-white p-10">
-      <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="container mx-auto px-3 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div>
           <div className="pb-5">
             <Logo />
@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="container mx-auto my-5" />
+      <hr className="container mx-auto px-3 my-5" />
       <p className="text-center text-sm">© 2025 BuyBee. All rights reserved.</p>
     </div>
   );

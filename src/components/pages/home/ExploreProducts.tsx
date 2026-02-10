@@ -7,7 +7,7 @@ const ExploreProducts = () => {
   // Get unique categories for filtering
 
   return (
-    <div className="container mx-auto mt-20">
+    <div className="container mx-auto px-3 mt-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-15">
         {productsData.map((product) => (
           <Link

@@ -19,7 +19,7 @@ const {
 
 const ProductDetailsPage = () => {
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-3 px-4 py-10">
       <div className="flex flex-col lg:flex-row gap-12">
         <ProductImage image={image} title={title} />
         <ProductInfo

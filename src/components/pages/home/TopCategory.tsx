@@ -12,7 +12,7 @@ const TopCategory = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-20">
+    <div className="container mx-auto px-3 mt-20">
       <div className="flex items-center justify-between">
         <div>
           <p className="text-4xl font-semibold">
@@ -38,8 +38,12 @@ const TopCategory = () => {
               colors[index % colors.length]
             } border-none rounded-sm w-full h-30 flex flex-col items-center justify-center gap-2 transition-all hover:scale-105 cursor-pointer`}
           >
-            {product.icon && <product.icon size={30} className="text-gray-700" />}
-            <span className="font-medium text-gray-800">{product?.category}</span>
+            {product.icon && (
+              <product.icon size={30} className="text-gray-700" />
+            )}
+            <span className="font-medium text-gray-800">
+              {product?.category}
+            </span>
           </div>
         ))}
       </div>

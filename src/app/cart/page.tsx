@@ -55,7 +55,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-3">
       <div className="flex flex-col lg:grid lg:grid-cols-12 gap-0 lg:gap-10 my-10">
         <div className="lg:col-span-9 mb-4 lg:mb-0">
           <Table className="border-separate border-spacing-y-4">

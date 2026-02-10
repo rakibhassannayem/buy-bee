@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div>
       <div className="bg-primary text-white py-4.5">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto px-3 flex justify-between items-center">
           <span>✉️ Email: support@buybee.com</span>
           <div className="flex items-center gap-3">
             <Facebook size={18} />
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="container mx-auto py-5 flex flex-col md:flex-row md:items-center justify-between gap-5">
+      <div className="container mx-auto px-3 py-5 flex flex-col md:flex-row md:items-center justify-between gap-5">
         <div className="text-primary">
           <Logo />
         </div>

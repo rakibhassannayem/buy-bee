@@ -15,7 +15,7 @@ import { Field, FieldLabel } from "@/components/ui/field";
 
 const CartPage = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-3">
       <div className="bg-chart-2/5 p-5 my-8">
         Returnin to customer ?{" "}
         <Link href={"/login"} className="text-primary hover:text-chart-1">
@@ -123,8 +123,15 @@ const CartPage = () => {
       </form>
 
       <Field orientation="horizontal" className="my-10">
-        <Checkbox id="terms-checkbox-basic" name="terms-checkbox-basic" className="w-5 h-5 border-black" />
-        <FieldLabel htmlFor="terms-checkbox-basic" className="text-lg font-normal">
+        <Checkbox
+          id="terms-checkbox-basic"
+          name="terms-checkbox-basic"
+          className="w-5 h-5 border-black"
+        />
+        <FieldLabel
+          htmlFor="terms-checkbox-basic"
+          className="text-lg font-normal"
+        >
           Save this information for faster check-out next time
         </FieldLabel>
       </Field>

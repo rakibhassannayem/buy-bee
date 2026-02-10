@@ -22,7 +22,7 @@ const BestSelling = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-20">
+    <div className="container mx-auto px-3 mt-20">
       <div className="flex items-center justify-between">
         <div>
           <p className="text-4xl font-semibold">

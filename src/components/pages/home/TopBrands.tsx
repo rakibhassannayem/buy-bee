@@ -26,7 +26,7 @@ const TopBrands = () => {
     },
   ];
   return (
-    <div className="container mx-auto mt-20 border-y-2 py-10">
+    <div className="container mx-auto px-3 mt-20 border-y-2 py-10">
       <div className="flex items-center justify-between">
         <div>
           <p className="text-2xl font-bold">Top Electronic Brands</p>
@@ -44,13 +44,16 @@ const TopBrands = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-15">
         {brands.map((brand) => (
-          <div className="relative group overflow-hidden rounded-lg" key={brand?.id}>
+          <div
+            className="relative group overflow-hidden rounded-lg"
+            key={brand?.id}
+          >
             <Image
               src={brand?.image}
               alt={brand?.subtitle}
               className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-110 border"
             />
-            <div 
+            <div
               className="absolute top-1/3 flex items-center justify-center p-4 text-center select-none pointer-events-none"
               style={{ color: brand?.color }}
             >

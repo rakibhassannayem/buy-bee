@@ -32,8 +32,8 @@ export default function Home() {
       <TopBrands />
       <BestSelling />
       <NewArrival />
-      <div className="container mx-auto">
-        <div className="flex items-center justify-between">
+      <div className="container mx-auto px-3">
+        <div className="flex flex-col md:items-center md:flex-row items-start justify-between">
           <div>
             <p className="text-4xl font-semibold">
               Explore <span className="text-primary">Our Products</span>
@@ -41,7 +41,7 @@ export default function Home() {
             <div className="border-t-9 border-primary mt-3" />
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
             <Select>
               <SelectTrigger className="w-48 bg-muted/30 border-none h-12 flex items-center justify-start gap-2 px-4 cursor-pointer">
                 <Funnel size={18} />
