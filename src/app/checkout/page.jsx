@@ -11,7 +11,7 @@ import mastercard from "@/assets/payment/mastercard.png";
 import nagad from "@/assets/payment/nagad.png";
 import CartFrom from "@/components/CartForm";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Field, FieldLabel } from "@/components/ui/field";
 
 const CartPage = () => {
   return (
