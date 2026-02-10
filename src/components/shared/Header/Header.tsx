@@ -16,6 +16,7 @@ import {
   InputGroupInput,
 } from "@/components/ui/input-group";
 import Navbar from "../Navbar/Navbar";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -52,10 +53,17 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-3 text-sm">
-          <div className="flex items-center gap-1">
-            <User size={20} />
-            Sign Up/Sign In
+          <div className="flex items-center">
+            <Link href={'/register'} className="flex items-center gap-1 hover:border-b-2 border-primary">
+              <User size={20} />
+              Sign Up
+            </Link>
+            /
+            <Link href={'/login'} className="flex items-center gap-1 hover:border-b-2 border-primary">
+              Sign In
+            </Link>
           </div>
+
           <div className="flex items-center gap-1">
             <ShoppingCart size={20} />
             Cart
