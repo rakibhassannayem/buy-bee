@@ -54,20 +54,29 @@ const Header = () => {
 
         <div className="flex items-center gap-3 text-sm">
           <div className="flex items-center">
-            <Link href={'/register'} className="flex items-center gap-1 hover:border-b-2 border-primary">
-              <User size={20} />
+            <User size={20} />
+            <Link
+              href={"/register"}
+              className="flex items-center gap-1 hover:border-b-2 border-primary"
+            >
               Sign Up
             </Link>
             /
-            <Link href={'/login'} className="flex items-center gap-1 hover:border-b-2 border-primary">
+            <Link
+              href={"/login"}
+              className="flex items-center gap-1 hover:border-b-2 border-primary"
+            >
               Sign In
             </Link>
           </div>
 
-          <div className="flex items-center gap-1">
+          <Link
+            href={"/cart"}
+            className="flex items-center gap-1 hover:border-b-2 border-primary"
+          >
             <ShoppingCart size={20} />
             Cart
-          </div>
+          </Link>
           <Heart size={20} />
         </div>
       </div>
